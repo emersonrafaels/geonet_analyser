@@ -27,15 +27,21 @@ Você pode:
 🚀 Instalação
 
 Clone o repositório:
+
+```bash
 git clone https://github.com/seu-usuario/seu-repositorio.git
 cd seu-repositorio
+```
 
 Instale as dependências:
 
+```bash
 pip install -r requirements.txt
+```
 
 🧑‍💻 Exemplo de Uso
 
+```python
 from distance_matrix_generator import gerar_base_exemplo, filtrar_agencias_proximas
 
 # Gerar matriz simulada de 10 agências
@@ -45,22 +51,29 @@ df = gerar_base_exemplo(n_agencias=10, max_distancia_km=3000)
 resultado = filtrar_agencias_proximas(df, limite_km=500)
 
 print(resultado)
+```
 
 ✅ Testes
 
 Os testes estão localizados em tests/test_agencias.py. Para rodar:
 
-pytest
-Rodar apenas uma categoria de teste:
-Geração de Base
+Rodar apenas uma categoria de teste: 
 
+1. Geração de Base
+
+```
 pytest -m geracao_base
-Filtro de Agências
+```
 
+2. Filtro de Agências
+
+```
 pytest -m filtro_agencias
+```
 
-🗂️ Estrutura do Projeto
+## 🗂️ Estrutura do Projeto
 
+```text
 📦 geonet_analyzer
  ┣ 📜 distance_matrix_generator.py
  ┣ 📂 tests
@@ -68,6 +81,7 @@ pytest -m filtro_agencias
  ┣ 📜 .gitignore
  ┣ 📜 README.md
  ┣ 📜 requirements.txt
+```
 
 📝 Licença
 
